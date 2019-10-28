@@ -1,0 +1,57 @@
+@import '../../base.scss';
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 140px;
+  border-radius: 10px;
+  margin: 25px;
+  background-color: $white;
+  border: 2px solid $white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+
+  &:hover {
+    box-shadow: none;
+    transform: translate3d(0, 2px, 0);
+    border: 2px solid $primaryColor;
+  }
+
+  .avatar {
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-radius: 50%;
+  }
+
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 25px;
+
+    .nameInfo {
+      margin: 10px 0;
+      font-size: 22px;
+      font-weight: 600;
+      transition: 150ms ease-in-out;
+    }
+
+    .emailInfo {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 15px auto;
+  }
+}

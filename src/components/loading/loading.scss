@@ -1,0 +1,17 @@
+@import '../../base.scss';
+
+#Loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid $primaryColor;
+  border-bottom-color: transparent;
+  animation: loadingSpin 0.75s infinite;
+  transition: 100ms;
+
+  @keyframes loadingSpin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
