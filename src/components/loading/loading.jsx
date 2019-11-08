@@ -4,7 +4,11 @@ import './loading.scss';
 
 const Loading = () => {
   return (
-    <div id="Loading" />
+    <div id="Loading">
+      <div className="ring" />
+      <div className="ring" />
+      <div className="ring" />
+    </div>
   )
 }
 
